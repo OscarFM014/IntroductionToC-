@@ -7,3 +7,13 @@ MapCell::MapCell()
     id = 0;
 }
 
+bool MapCell::isWall()
+{
+
+    if (id == '1')
+    {
+        return true;
+    }
+
+    return false;
+}

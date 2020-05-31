@@ -13,12 +13,11 @@ public:
     void Draw();
 
     //Get the player x and y
-    void SetPlayerCell(int pX, int pY);
-
+    bool SetPlayerCell(int pX, int pY);
+    void loadMapFile();
     int id;
 
 private:
 protected:
-    void loadMapFile();
 };
 #endif

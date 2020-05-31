@@ -21,6 +21,9 @@ public:
     {
         return y;
     }
+    int lastx, lasty;
+
+    void resetPosition();
 
 protected:
     int x, y;

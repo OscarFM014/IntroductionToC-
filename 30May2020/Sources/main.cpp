@@ -18,9 +18,15 @@ int main()
 
         Hero.CallInput();
 
-        map.SetPlayerCell(Hero.getX(), Hero.getY());
-
-        map.Draw();
+        if (map.SetPlayerCell(Hero.getX(), Hero.getY()))
+        {
+            map.Draw();
+        }
+        else
+        {
+            Hero.resetPosition();
+            map.Draw();
+        }
     }
     return 0;
 }

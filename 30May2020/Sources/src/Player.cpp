@@ -16,18 +16,22 @@ void Player::CallInput()
     switch (userInput)
     {
     case 'w':
+        lasty = y;
         y--;
         //cout << "Up" << endl;
         break;
     case 's':
+        lasty = y;
         y++;
         //cout << "Down" << endl;
         break;
     case 'a':
+        lastx = x;
         x--;
         //cout << "left" << endl;
         break;
     case 'd':
+        lastx = x;
         x++;
         //cout << "Rigth" << endl;
         break;
@@ -46,3 +50,10 @@ Player::~Player()
 
 
 }*/
+
+void Player::resetPosition()
+{
+
+    x = lastx;
+    y = lasty;
+}
