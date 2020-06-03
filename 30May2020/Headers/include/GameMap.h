@@ -7,6 +7,7 @@ class GameMap
 public:
     GameMap();
 
+    bool gameOver;
     MapCell *playerCell;
     MapCell mapCells[15][15];
 
@@ -15,6 +16,8 @@ public:
     //Get the player x and y
     bool SetPlayerCell(int pX, int pY);
     void loadMapFile();
+    void drawIntro();
+    void drawVictory();
     int id;
 
 private:

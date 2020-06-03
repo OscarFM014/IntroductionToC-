@@ -8,26 +8,9 @@ public:
     Player();
 
     void CallInput();
-
-    //Destrutor
-    //virtual ~Player();
-
-    int getX()
-    {
-        return x;
-    }
-
-    int getY()
-    {
-        return y;
-    }
     int lastx, lasty;
-
-    void resetPosition();
-
-protected:
     int x, y;
 
-private:
+    void resetPosition();
 };
 #endif //PLAYER_H

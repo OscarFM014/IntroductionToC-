@@ -4,6 +4,7 @@ using namespace std;
 
 Player::Player()
 {
+
     x = 1;
     y = 1;
 }
@@ -43,13 +44,7 @@ void Player::CallInput()
 }
 
 //Destrutor
-/* 
-Player::~Player()
-{
-
-
-
-}*/
+//Player::~Player(){}
 
 void Player::resetPosition()
 {
